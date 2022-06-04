@@ -12,9 +12,9 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // connecting routes
-require('./routes/htmlRoutes')(app);
 require('./routes/apiRoutes')(app);
+require('./routes/htmlRoutes')(app);
 
 app.listen(PORT, function() {
-    console.log(`${PORT} is being used.`);
+    console.log(`PORT: ${PORT} is being used.`);
 });
