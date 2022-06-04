@@ -30,9 +30,11 @@ module.exports = function(app) {
     });
 
     // DELETE api
-    app.delete('/api/notes/id', (req, res) => {
+    app.delete('/api/notes/:id', (req, res) => {
         // finding the id to be deleted
-        let noteId = req.params.id.toString();
+        let noteId = req.params.id;
+
+        console.log('getting note ID');
 
         // read db.json data and filter through the notes to get all of them except the note to be deleted
         let data = JSON.parse(fs.readFileSync(path.join(__dirname, '../db/db.json'), 'utf8'));
@@ -40,6 +42,9 @@ module.exports = function(app) {
 
         // write newData to db.json, and send response
         fs.writeFileSync(path.join(__dirname, '../db/db.json'), JSON.stringify(newData));
+
+        console.log('deleted')
+
         res.json(newData);
     });
 };
