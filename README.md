@@ -13,13 +13,13 @@
   6. [Questions](#questions)
   
   ## Installation Instructions
-  To install first you should clone the code. Next you can use npm install express uuid. From there you can run node server.js which will alow you to see the note taker app running on http://localhost:3001/.
+  To install first you should clone the code. Next you can use npm install express uuid to install the packages used to run this project.
 
   ## Usage Information
   User can run node server.js to start the server. They can then navigate to http://localhost:3001/ in their web browser to see the landing page. After clicking get started, the user should be able to create, save, and delete notes.
 
   ## GIF Showing Page in Use
-  ![]()
+  ![](/public/assets/images/Note-Taker.gif)
 
   ## Contribution Guidelines
   Project is complete and needs no contribution. Feel free to copy it and make any changes you feel are nessecarry for your needs.
@@ -32,4 +32,4 @@
 
   https://github.com/Jordanio49
 
-  email: jthomas135@hotmail.com
+  Email: jthomas135@hotmail.com
